@@ -1,0 +1,15 @@
+name: 'setup-protobuf'
+description: 'Greet someone and record the time'
+inputs:
+  protobuf-version:  # id of input
+    description: 'protobuf version'
+    required: true
+    default: 'v3.17.0'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'composite'
+  steps:
+    - run: ${{ github.action_path }}/scripts/setup-protobuf.sh
+  shell: bash
