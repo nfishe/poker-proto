@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - run: |
-          for proto in "poker"/**/*.proto; do
+          for proto in "poker"/*.proto; do
             protoc -I=./poker --python_out=. $proto
           done
         shell: bash
