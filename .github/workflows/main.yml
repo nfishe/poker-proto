@@ -20,6 +20,6 @@ jobs:
 
       - run: |
           for proto in "poker"/**/*.proto; do
-            protoc -I=./proto --python_out=. $proto
+            protoc -I=./poker --python_out=. $proto
           done
         shell: bash
