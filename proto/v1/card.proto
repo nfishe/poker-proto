@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+package poker.v1;
+
 enum Suit {
     SPADE = 0;
     HEART = 1;
