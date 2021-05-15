@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - run: |
-          for proto in "poker"/**/*.proto;
+          for proto in "poker"/**/*.proto; do
             protoc "${proto}"
           done
         shell: bash
